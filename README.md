@@ -1,7 +1,7 @@
 # navigation
 一个提供调用原生地图的Cordova导航插件
 # Installation
-cordova plugin add https://github.com/shosky/navigation.git
+cordova plugin https://github.com/shosky/cordova-navigation.git
 # Features
 1、支持百度地图 or 高德地图  
 2、支持android or ios
