@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.lovedudu.cordova" version="0.0.1" 
+        xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Navigation</name>
+    <description>一个提供调用原生地图的Cordova导航插件</description>
+    <js-module name="Navigation" src="www/Navigation.js">
+        <clobbers target="Navigation"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Navigation">
+                <param name="android-package" value="com.lovedudu.cordova.Navigation"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Navigation.java" target-dir="src/com/lovedudu/cordova"/>
+    </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Navigation">
+                <param name="ios-package" value="Navigation" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Navigation.m" />
+    </platform>
+</plugin>
