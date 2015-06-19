@@ -3,10 +3,10 @@
 # Installation
 cordova plugin add https://github.com/shosky/navigation.git
 # Features
-1、支持百度地图 or 高德地图
+1、支持百度地图 or 高德地图  
 2、支持android or ios
 # Example
-Javascript API:
+Javascript API:  
 1、Android(支持传入 当前位置经纬度 与 目的地):
 ```javascript
     Navigation.do(
@@ -17,11 +17,11 @@ Javascript API:
     },
     function(message) 
     {
-		   doSomeing();
-		}, function(message) 
-		{
-		   doSomeing();
-		});
+		doSomeing();
+	}, function(message) 
+	{
+		doSomeing();
+	});
 ```
 2、IOS(支持传入目的地):
 ```javascript
@@ -29,9 +29,9 @@ Javascript API:
     '深圳湾公园',
     function(message) 
     {
-		   doSomeing();
-		}, function(message) 
-		{
-		   doSomeing();
-		});
-	```
+	   doSomeing();
+	}, function(message) 
+	{
+	   doSomeing();
+	});
+```
