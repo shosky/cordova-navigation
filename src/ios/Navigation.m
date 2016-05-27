@@ -25,7 +25,7 @@
         }
 	
         if ([[UIApplication sharedApplication]canOpenURL:[NSURL URLWithString:@"baidumap://map/"]]){
-            NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?origin=我的位置&destination=%@&mode=driving",echo]
+            NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?origin=我的位置&destination=%@&mode=transit",echo]
                                    stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             
             [[UIApplication sharedApplication]openURL:[NSURL URLWithString:urlString]];
